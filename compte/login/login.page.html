@@ -1,0 +1,42 @@
+<ion-content>
+  <ion-grid>
+  <ion-row justify-content-center>
+    <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+      <div text-center>
+        <h4>Page de connexion</h4>
+      </div>
+      <div class="logo">
+        <ion-icon color="light" name="contact"></ion-icon>
+      </div>
+  <form [formGroup]="loginForm" (submit)="login(loginForm.value)">
+    <ion-list>
+      <ion-item>
+        <ion-label color="light" position="stacked">Nom d'utilisateur</ion-label>
+        <ion-input color="light" formControlName="identifier"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label color="light" position="stacked">Mot de passe</ion-label>
+        <ion-input color="light" formControlName="password" type="password"></ion-input>
+      </ion-item>
+    </ion-list>
+    <ion-button type="submit" color="light" expand="full" shape="round" fill="outline">Connexion</ion-button>
+    <br>
+    <ion-button color="tertiary" expand="full" shape="round"><a href="/register">S'inscrire</a></ion-button>
+     <a href="/reset-password">Mot de passe oublié ?</a>
+    </form>
+    <div class="flex">
+      <ion-button color="facebook" shape="round">
+        <ion-icon slot="start" name="logo-facebook"></ion-icon>
+        Facebook
+      </ion-button>
+      <ion-button color="google" color="youtube" shape="round">
+        <ion-icon slot="start" name="logo-google"></ion-icon>
+        Google
+      </ion-button>
+    </div>
+
+  
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>

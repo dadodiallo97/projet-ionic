@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Compte
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-grid>
+  <ion-row>
+    <ion-col col-4>
+        <div class="user-avatar">
+          <img [src]="image">
+        </div>
+    </ion-col>
+    <ion-col padding-top col-8>
+      <h2 ion-text class="no-margin bold text-white">
+        {{username}} 
+      </h2>
+      <ion-button (click)="addPhoto('library')" color="tertiary" expand="block">
+        <ion-icon slot="start" color="medium" name="image"></ion-icon>
+      changer la photo
+      </ion-button>
+      <ion-button (click)="addPhoto('camera')" color="secondary" expand="block">
+        <ion-icon name="camera" slot="start"></ion-icon>
+        Prendre une photo
+      </ion-button>
+    </ion-col>
+  </ion-row>
+
+  <ion-row no-padding class="other-data">
+    <ion-col no-padding class="column">
+      <button ion-button icon-left small full color="light" menuClose disabled>
+        <ion-icon name="contact"></ion-icon>
+        Edit Profile
+      </button>
+    </ion-col>
+    
+  </ion-row>
+
+</ion-grid>
+
+
+
+

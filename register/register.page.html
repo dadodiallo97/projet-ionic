@@ -1,0 +1,60 @@
+
+<ion-content>
+  <ion-content>
+    <ion-grid>
+    <ion-row justify-content-center>
+      <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+        <div text-center>
+          <h4>Page d'inscription</h4>
+          <ion-buttons slot="start">
+            <ion-back-button defaultHref="/login"></ion-back-button>
+          </ion-buttons>
+        </div>
+        <div class="logo">
+          <ion-icon color="light" name="contact"></ion-icon>
+        </div>
+
+  <form [formGroup]="registerForm" (submit)="register(registerForm.value)">
+    
+    <ion-list>
+      <ion-item>
+        <ion-label color="light" position="stacked">Nom d'utilisateur</ion-label>
+        <ion-input color="light" formControlName="username"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label color="light"  position="stacked">nom</ion-label>
+        <ion-input color="light" formControlName="nom"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label color="light"  position="stacked">prenom</ion-label>
+        <ion-input color="light" formControlName="prenom"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label color="light" position="stacked">Email</ion-label>
+        <ion-input color="light" formControlName="email"></ion-input>
+      </ion-item>
+     
+
+      <ion-item>
+        <ion-label color="light" position="stacked">Mot de passe</ion-label>
+        <ion-input color="light"  formControlName="password" type="password"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label color="light" position="stacked">adresse</ion-label>
+        <ion-input color="light"formControlName="adresse"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label color="light" position="stacked">telephone</ion-label>
+        <ion-input color="light" formControlName="telephone"></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <ion-button type="submit" color="light" expand="full" shape="round" fill="outline"> S'inscrire </ion-button>
+  </form>
+
+
+</ion-col>
+</ion-row>
+</ion-grid>
+</ion-content>

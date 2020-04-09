@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="title">
+      Restaurant App
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+   <ion-item class="menu">MENU DU JOUR</ion-item>
+   
+  <ion-item *ngFor="let menu of menus" >
+    <span *ngFor="let plat of menu.plats">
+      {{menu.DateMenu}} {{plat.nom}} <br> <div>{{plat.Description}} <br > <h6 class="prix">{{plat.Prix}}</h6>
+      <ion-button onclick="confirm('Voulez-vous commander?')"> commander</ion-button></div>
+  </span>
+  </ion-item>
+
+</ion-content>
+
