@@ -1,6 +1,6 @@
 # projet-ionic
 Nom: Diallo
-Diallo: Aida
+Prenom: Aida
 Classe: M2glsi
 
 Démarrage rapide
